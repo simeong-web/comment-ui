@@ -38,5 +38,6 @@ Open new terminal and type:
 
 
 ## Images:
-Desktop:
-![](public/assets/images/Final.PNG)
+Image for Desktop, Tablet and Phone available in image folder. Here's an example:
+
+<img src="public/assets/images/Tablet.PNG">
