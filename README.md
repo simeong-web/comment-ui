@@ -10,7 +10,7 @@ This is fully responsive comment UI component with HTML5 and CSS3, styled with S
 --- Styling: 4h 47min
 --- Finishing Touches and Media Queries: 43 min
 
-####### Total: 6h 15 min
+###### Total: 6h 15 min
 
 ## Scripts:
 *Note: This project utilised live-server to host node-sass to compile SASS into regular CSS.*
