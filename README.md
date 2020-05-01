@@ -38,4 +38,5 @@ Open new terminal and type:
 
 
 ## Images:
-Check-out image inside public/assets/images to see Desktop, Tablet and Phone versions against the initial design image.
+Desktop:
+![Desktop](https://github.com/simeong-web/comment-ui/tree/master/public/assets/images/Final.png)
