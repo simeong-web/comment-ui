@@ -39,4 +39,4 @@ Open new terminal and type:
 
 ## Images:
 Desktop:
-![Desktop](https://github.com/simeong-web/comment-ui/tree/master/public/assets/images/Final.png)
+![Desktop](https://github.com/simeong-web/comment-ui/public/assets/images/Final.PNG)
