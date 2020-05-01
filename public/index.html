@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <title>Comment UI | Simeon Georgiev</title>
+</head>
+
+<body>
+    <!-- This Component will be separated into 5 smaller ones to mimic the correct design pattern.-->
+    <div class="comment-component">
+        <div class="comment-genre">
+            <h2>Comments</h2>
+            <a href="#">20+</a>
+            <p>on</p>
+            <a href="#"><em>How Great User Experience Design (UX) can grow Your Bus..</em></a>
+        </div>
+        <div class="comment-sites">
+            <a href="#" class="active">WordPress</a>
+            <a href="#">Facebook</a>
+            <a href="#">Tweets</a>
+            <a href="#" class="back"><i class="fa fa-angle-up" aria-hidden="true"></i>Back to top</a>
+        </div>
+        <div class="user-info grid">
+            <img src="https://via.placeholder.com/55" alt="user-image">
+            <div class="user">
+                <div class="user-details">
+                    <h4>Administrator</h4>
+                    <p>- 13th June 2015 - 14:25</p>
+                </div>
+                <input placeholder="Start typing here to leave your comment ..."></input>
+                <div class="add-tags">
+                    <button>add tags</button>
+                    <p>You can tag your comments!</p>
+                </div>
+            </div>
+            <div class="comment-actions">
+                <button>Cancel</button>
+                <button>Publish</button>
+            </div>
+        </div>
+        <div class="comment-filter">
+            <p>Order:</p>
+            <a class="active">Top Rated</a>
+            <a class="grey">Newest First</a>
+            <a class="grey">Oldest First</a>
+        </div>
+        <div class="comment-details grid">
+            <div class="comment-count">
+                <i class="fa fa-caret-up fa-3x" aria-hidden="true"></i>
+                <span>457</span>
+                <i class="fa fa-caret-down fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="comment">
+                <div class="author">
+                    <img class="author-image" src="https://via.placeholder.com/20" alt="author-image">
+                    <h4 class="author-name">username2452</h4>
+                    <p> - 13th June 2015 - 14:25</p>
+                </div>
+                <div class="comment-description">
+                    <p>Some fifty years ago there was a curious case of whale-trover litigated in England, where in the
+                        plaintiffs set forth that after a hard chase of a whale in the Northern seas;</p>
+                    <p>When indeed they (the plaintiffs) had succeeded in harpooing the fish; they were at last, through
+                        peril of their lives, obliged to forsake not only their lines, but their boat itself.
+                        Ultimately the defendants (the crew of another ship) came up with the whale, struck, killed.
+                    </p>
+                </div>
+                <div class="comment-tags">
+                    <button>suggestion</button>
+                    <button>tag</button>
+                    <div class="comment-links">
+                        <a class="grey">Permalink</a>
+                        <a class="grey">Report</a>
+                        <a class="active">Reply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

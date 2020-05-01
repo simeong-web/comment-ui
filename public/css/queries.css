@@ -1,0 +1,126 @@
+/*
+*
+* Adding responsiveness to address a tick position across devices
+* and comment positioning.
+*
+*/
+
+/*** Large Laptop Screens ***/
+
+@media only screen and (max-width: 1440px) {
+    .user-info::before {
+        top: 24%;
+        left: 16%;
+        transform: translateY(20px) translateX(-100%) rotate(45deg);
+    }
+}
+
+/*** Small Laptop Screens ***/
+
+@media only screen and (max-width: 1024px) {
+    .user-info::before {
+        top: 19%;
+        left: 17%;
+        transform: translateY(23px) translateX(-90%) rotate(45deg);
+    }
+
+    .user-info {
+        gap: 25px;
+    }
+
+    .comment-details {
+        gap: 35px;
+    }
+}
+
+/*** Tablets ***/
+
+@media only screen and (max-width: 768px) {
+    .user-info::before {
+        top: 16%;
+        left: 19%;
+        transform: translateY(25px) translateX(-110%) rotate(45deg);
+    }
+
+    .user-info {
+        gap: 10px;
+    }
+
+    .comment-details {
+        gap: 32px;
+    }
+}
+
+/*** Large Phone ***/
+
+@media only screen and (max-width: 425px) {
+    .user-info::before {
+        top: 16%;
+        left: 24%;
+        transform: translateY(25px) translateX(-110%) rotate(45deg);
+    }
+
+    .comment-genre, .comment-sites, .user-info .user-details {
+        flex-wrap: wrap;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 15fr;
+    }
+
+    .comment-actions {
+        grid-column-end: 3;
+        justify-content: space-between;
+    }
+
+    .user-info .comment-actions button {
+        margin-left: 0;
+    }
+
+    .user-info {
+        gap: 10px;
+    }
+
+    .user-info .user-details p {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .add-tags {
+        margin-bottom: 10px;
+    }
+
+    .author {
+        flex-wrap: wrap;
+    }
+
+    .comment-details {
+        gap: 32px;
+    }
+
+    .comment-details .comment .comment-tags {
+        display: inline;
+    }
+
+    .comment-details .comment .comment-tags button {
+        margin-bottom: 10px;
+    }
+
+    .comment-details .comment .comment-tags .comment-links {
+        margin: 0;
+    }
+}
+
+/*** Medium Phone ***/
+
+@media only screen and (max-width: 375px) {
+    .user-info::before {
+        top: 17%;
+        left: 24%;
+        transform: translateY(28px) translateX(-110%) rotate(45deg);
+    }
+}

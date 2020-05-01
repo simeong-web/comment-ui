@@ -1,0 +1,193 @@
+/* Variables */
+/* CSS Styles*/
+/*** Basic Page Styling ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Josef Sans Bold'; }
+
+/*** Reusable ***/
+.comment-component {
+  font-family: sans-serif;
+  max-width: 75%;
+  margin: 10% auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 13fr 1fr; }
+
+button {
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2px; }
+
+.active {
+  color: #62B9F7; }
+
+img {
+  border-radius: 10px; }
+
+.fa-angle-up {
+  color: #ffffff;
+  background-color: #33A6F6;
+  border-radius: 5px;
+  padding: 2px 5px; }
+
+.grey {
+  color: #BCBCBC; }
+
+/*** Comment Genre ***/
+.comment-genre {
+  margin-bottom: 25px;
+  display: flex; }
+  .comment-genre h2 {
+    margin: auto 0; }
+  .comment-genre button {
+    margin-left: 5px; }
+  .comment-genre p {
+    margin: auto 15px;
+    font-weight: 700;
+    color: #BCBCBC; }
+  .comment-genre a {
+    margin: auto 0;
+    text-decoration: none;
+    color: #62B9F7; }
+    .comment-genre a:first-of-type {
+      font-weight: 700;
+      background-color: #33A6F6;
+      color: #ffffff;
+      padding: 5px;
+      margin-left: 10px;
+      border-radius: 5px;
+      font-size: 25px; }
+
+/*** Comment Sites ***/
+.comment-sites {
+  margin-bottom: 10px;
+  display: flex; }
+  .comment-sites a {
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: 700; }
+    .comment-sites a:nth-child(2) {
+      color: #000000; }
+    .comment-sites a:nth-child(3) {
+      color: #000000; }
+  .comment-sites .back {
+    margin-left: auto;
+    margin-right: 0;
+    color: #000000; }
+    .comment-sites .back i {
+      background-color: #62B9F7;
+      margin-right: 5px; }
+
+/*** User Info ***/
+.user-info {
+  margin-bottom: 10px;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 40px 0;
+  gap: 10px; }
+  .user-info .user-details {
+    display: flex;
+    margin-bottom: 10px; }
+    .user-info .user-details p {
+      margin-left: 5px;
+      color: #BCBCBC; }
+  .user-info input {
+    width: 100%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: none; }
+  .user-info .add-tags {
+    display: flex; }
+    .user-info .add-tags p {
+      color: #BCBCBC;
+      opacity: 0.2;
+      font-style: italic;
+      margin: auto 0; }
+    .user-info .add-tags button {
+      margin-right: 5px;
+      color: #BCBCBC;
+      background-color: #F2F2F2;
+      padding: 5px;
+      font-style: italic; }
+  .user-info .comment-actions {
+    display: flex;
+    align-items: flex-end; }
+    .user-info .comment-actions button {
+      color: #BCBCBC;
+      margin-left: 40px;
+      padding: 10px;
+      font-weight: bolder;
+      background-color: #F2F2F2; }
+      .user-info .comment-actions button:first-child {
+        background: #ffffff; }
+  .user-info::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 27%;
+    left: 15%;
+    transform: translateY(18px) translateX(-90%) rotate(45deg);
+    border-bottom: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    background: #ffffff; }
+
+/*** Comment Filter ***/
+.comment-filter {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex; }
+  .comment-filter a {
+    margin-left: 15px; }
+
+/*** Comment Details ***/
+.comment-details .comment-count {
+  text-align: center; }
+  .comment-details .comment-count i {
+    width: 100%;
+    color: #33A6F6; }
+    .comment-details .comment-count i:last-child {
+      color: #BCBCBC; }
+
+.comment-details .author-image {
+  border-radius: 5px; }
+
+.comment-details .comment .author {
+  display: flex;
+  margin-bottom: 10px; }
+  .comment-details .comment .author p {
+    color: #BCBCBC;
+    margin: auto 0; }
+  .comment-details .comment .author .author-name {
+    margin: auto 0;
+    padding: 0 10px; }
+
+.comment-details .comment .comment-description {
+  line-height: 1.5; }
+  .comment-details .comment .comment-description p {
+    margin-bottom: 20px;
+    opacity: 0.9; }
+
+.comment-details .comment .comment-tags {
+  display: flex; }
+  .comment-details .comment .comment-tags button {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #33A6F6;
+    font-style: italic; }
+  .comment-details .comment .comment-tags .comment-links {
+    margin: auto 0 auto 15px;
+    text-transform: uppercase;
+    font-size: 12px; }
+    .comment-details .comment .comment-tags .comment-links a {
+      margin-right: 15px; }

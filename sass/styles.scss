@@ -1,0 +1,301 @@
+/* Variables */
+$space-left: 5px;
+$space-around: 15px;
+$space-below: 10px;
+$space-below-double: 20px;
+$space-below-four: 40px;
+$margin-centre: auto 0;
+$flex-component: flex;
+$border-radius: $space-left;
+$white: #ffffff;
+$black: #000000;
+$grey: #BCBCBC;
+$lightergrey: #F2F2F2;
+$light-grey-border: 1px solid $lightergrey;
+$blue: #62B9F7;
+$darker-blue: #33A6F6;
+$small-font-size: 12px;
+$medium-font-size: 15px;
+$large-font: 700;
+$italic-font: italic;
+
+@mixin component-separation-small {
+    margin-bottom: 10px;
+}
+
+@mixin component-separation {
+    margin-bottom: 20px;
+}
+
+/* CSS Styles*/
+/*** Basic Page Styling ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josef Sans Bold';
+}
+
+/*** Reusable ***/
+.comment-component {
+    font-family: sans-serif;
+    max-width: 75%;
+    margin: 10% auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 13fr 1fr;
+}
+
+button {
+    border-radius: $border-radius;
+    border: none;
+    text-decoration: none;
+    color: $white;
+    padding: 2px;
+}
+
+.active {
+    color: $blue;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.fa-angle-up {
+    color: $white;
+    background-color: $darker-blue;
+    border-radius: $border-radius;
+    padding: 2px $space-left;
+}
+
+.grey {
+    color: $grey;
+}
+
+/*** Comment Genre ***/
+.comment-genre {
+    margin-bottom: 25px;
+    display: $flex-component;
+
+    h2 {
+        margin: $margin-centre;
+    }
+
+    button {
+        margin-left: $space-left;
+    }
+
+    p {
+        margin: auto $space-around;
+        font-weight: $large-font;
+        color: $grey;
+    }
+
+    a {
+        margin: $margin-centre;
+        text-decoration: none;
+        color: $blue;
+
+        &:first-of-type {
+            font-weight: $large-font;
+            background-color: $darker-blue;
+            color: $white;
+            padding: $space-left;
+            margin-left: $space-left * 2;
+            border-radius: $border-radius;
+            font-size: 25px;
+        }
+    }
+}
+
+/*** Comment Sites ***/
+.comment-sites {
+    @include component-separation-small;
+    display: $flex-component;
+
+    a {
+        margin-right: 30px;
+        text-decoration: none;
+        font-weight: $large-font;
+
+        &:nth-child(2) {
+            color: $black;
+        }
+
+        &:nth-child(3) {
+            color: $black;
+        }
+    }
+
+    .back {
+        margin-left: auto;
+        margin-right: 0;
+        color: $black;
+
+        i {
+            background-color: $blue;
+            margin-right: $space-left;
+        }
+    }
+}
+
+/*** User Info ***/
+.user-info {
+    @include component-separation-small;
+    border-top: $light-grey-border;
+    border-bottom: $light-grey-border;
+    padding: $space-below-four 0;
+    gap: $space-below;
+
+    .user-details {
+        display: $flex-component;
+        margin-bottom: $space-below;
+
+        p {
+            margin-left: $space-left;
+            color: $grey;
+        }
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: $space-below-double;
+        text-decoration: none;
+        border: none;
+    }
+
+    .add-tags {
+        display: $flex-component;
+
+        p {
+            color: $grey;
+            opacity: 0.2;
+            font-style: $italic-font;
+            margin: $margin-centre;
+        }
+
+        button {
+            margin-right: $space-left;
+            color: $grey;
+            background-color: $lightergrey;
+            padding: $space-left;
+            font-style: $italic-font;
+        }
+    }
+
+    .comment-actions {
+        display: $flex-component;
+        align-items: flex-end;
+        
+        button {
+            color: $grey;
+            margin-left: $space-below-four;
+            padding: $space-below;
+            font-weight: bolder;
+            background-color: $lightergrey;
+
+            &:first-child {
+                background: $white;
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 27%;
+        left: 15%;
+        transform: translateY(18px) translateX(-90%) rotate(45deg);
+        border-bottom: $light-grey-border;
+        border-right: $light-grey-border;
+        background: $white;
+    }
+}
+
+/*** Comment Filter ***/
+.comment-filter {
+    text-transform: uppercase;
+    margin-bottom: $space-below-four;
+    font-weight: $large-font;
+    font-size: $medium-font-size;
+    display: $flex-component;
+
+    a {
+        margin-left: $space-around;
+    }
+}
+
+/*** Comment Details ***/
+.comment-details {
+    .comment-count {
+        text-align: center;
+        
+        i {
+            width: 100%;
+            color: $darker-blue;
+
+            &:last-child {
+                color: $grey;
+            }
+        }
+    }
+
+    .author-image {
+        border-radius: $border-radius;
+    }
+
+    .comment {
+        .author {
+            display: $flex-component;
+            margin-bottom: $space-below;
+
+            p {
+                color: $grey;
+                margin: $margin-centre;
+            }
+
+            .author-name {
+                margin: $margin-centre;
+                padding: 0 $space-below;
+            }
+        }
+
+        .comment-description {
+            line-height: 1.5;
+            
+            p {
+                margin-bottom: $space-below-double;
+                opacity: 0.9;
+            }
+        }
+
+        .comment-tags {
+            display: $flex-component;
+        
+            button {
+                margin-right: $space-left;
+                padding: $space-left;
+                background-color: $darker-blue;
+                font-style: $italic-font;
+            }
+
+            .comment-links {
+                margin: auto 0 auto $space-around;
+                text-transform: uppercase;
+                font-size: $small-font-size;
+
+                a {
+                    margin-right: $space-around;
+                }
+            }
+        }
+    }
+}
