@@ -111,6 +111,10 @@ img {
             border-radius: $border-radius;
             font-size: 25px;
         }
+
+        &:last-of-type {
+            font-style: $italic-font;
+        }
     }
 }
 

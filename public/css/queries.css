@@ -36,14 +36,18 @@
 /*** Tablets ***/
 
 @media only screen and (max-width: 768px) {
+    .comment-component {
+        max-width: 90%;
+    }
+
     .user-info::before {
         top: 16%;
-        left: 19%;
-        transform: translateY(25px) translateX(-110%) rotate(45deg);
+        left: 12%;
+        transform: translateY(25px) translateX(-135%) rotate(45deg);
     }
 
     .user-info {
-        gap: 10px;
+        gap: 20px;
     }
 
     .comment-details {
@@ -56,7 +60,7 @@
 @media only screen and (max-width: 425px) {
     .user-info::before {
         top: 16%;
-        left: 24%;
+        left: 17%;
         transform: translateY(25px) translateX(-110%) rotate(45deg);
     }
 
